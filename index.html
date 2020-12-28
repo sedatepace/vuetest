@@ -1,32 +1,18 @@
 <html>
     <head>
         <meta charset="utf-8">
-<<<<<<< HEAD
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-=======
-        <meta name="viewport" content="width=devce-width, initial-scale=1.0">
->>>>>>> 53b912ac95f662820ac1a1204d05e94f7dbe12ee
         <title>Vue Sample</title>
     </head>
     <body>
         <div id="app">
-<<<<<<< HEAD
             <router-view name="header"></router-view>   
             <router-view></router-view>
             <router-view name="footer"></router-view>
-=======
-            <h1>뷰 라우터 예제</h1>
-            <p>
-                <router-link to="/main">Main 컴포넌트로 이동</router-link>
-                <router-link to="/login">Login 컴포넌트로 이동</router-link>
-            </p>
-            <router-view></router-view>
->>>>>>> 53b912ac95f662820ac1a1204d05e94f7dbe12ee
         </div>
 
         <script src ="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
         <script src ="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
-<<<<<<< HEAD
         <script>
             var Body = {template: '<div>This is Body</div>'};
             var Header = {template: '<div>This is Header</div>'};
@@ -44,23 +30,6 @@
                     }
                 ]
             });
-=======
-        
-        
-        <script>
-            var Main = { template: '<div>main</div>'};
-            var Login = {template: '<div>login</div>'};
-
-            var routes = [
-                {path: '/main', component: Main},
-                {path: '/login', component: Login}
-            ];
-
-            var router = new VueRouter({
-                routes
-            })
->>>>>>> 53b912ac95f662820ac1a1204d05e94f7dbe12ee
-
             var app = new Vue({
                 router
             }).$mount('#app');
